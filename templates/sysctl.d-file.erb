@@ -1,3 +1,5 @@
+<%= ERB.new(File.read(File.expand_path("_header.erb",File.dirname(file)))).result(binding) -%>
+
 <% if @comment.is_a?(Array) -%>
 <% @comment.each do |line| -%>
 # <%= line %>
